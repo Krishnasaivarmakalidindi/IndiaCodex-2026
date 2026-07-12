@@ -1,10 +1,24 @@
-# AgriTrust 🌾
+<div align="center">
+  <h1>AgriTrust 🌾</h1>
+  <p><strong>Trusted Agricultural Commerce Network</strong></p>
+  <p><em>Version 1.0 (Hackathon Release)</em></p>
 
-> **Trusted Agricultural Commerce Network**
->
-> Version 1.0 (Hackathon Release)
+  [![React](https://img.shields.io/badge/React-18-blue.svg?style=flat-square&logo=react)](https://reactjs.org/)
+  [![Cardano](https://img.shields.io/badge/Cardano-MeshJS-0033AD.svg?style=flat-square&logo=cardano)](https://cardano.org/)
+  [![Supabase](https://img.shields.io/badge/Supabase-Realtime-3ECF8E.svg?style=flat-square&logo=supabase)](https://supabase.com/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6.svg?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+</div>
 
 AgriTrust is a decentralized, Web3-powered agricultural marketplace where farmers sell directly to buyers, AI assists with intelligent pricing, and Cardano smart contracts secure escrow payments to guarantee absolute trust and provenance.
+
+---
+
+## 📚 Documentation Index
+
+- [🖥️ Architecture Deep Dive](./docs/ARCHITECTURE.md)
+- [🗄️ Backend & Database](./backend/README.md)
+- [📜 Smart Contracts & Escrow](./blockchain/README.md)
+- [📸 Application Screenshots](./docs/SCREENSHOTS.md)
 
 ---
 
