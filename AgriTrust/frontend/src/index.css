@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --color-bg:      #f4f7f4;
+  --color-surface: #ffffff;
+  --color-border:  #e5e7eb;
+  --shadow-card:   0 1px 3px 0 rgba(0,0,0,.07), 0 1px 2px -1px rgba(0,0,0,.07);
+  --shadow-md:     0 4px 12px -2px rgba(0,0,0,.08), 0 2px 6px -2px rgba(0,0,0,.05);
+  --shadow-lg:     0 10px 30px -4px rgba(0,0,0,.10), 0 4px 10px -3px rgba(0,0,0,.05);
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #111827;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 5px; height: 5px; }
+::-webkit-scrollbar-track  { background: #f1f5f1; }
+::-webkit-scrollbar-thumb  { background: #d1fae5; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #6ee7b7; }
+
+/* ── Card helpers ──────────────────────────────────────────────── */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.card-hover {
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+.card-hover:hover {
+  border-color: #a7f3d0;
+  box-shadow: 0 6px 20px -4px rgba(16,185,129,.12);
+  transform: translateY(-1px);
+}
+
+/* Keep glass-card usable in light mode */
+.glass-card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229,231,235,0.8);
+  box-shadow: var(--shadow-md);
+}
+
+.glass-card-hover { transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
+.glass-card-hover:hover {
+  border-color: #a7f3d0;
+  box-shadow: 0 8px 28px -4px rgba(16,185,129,.15);
+  transform: translateY(-2px);
+}
+
+/* ── Glow utilities ────────────────────────────────────────────── */
+.glow-emerald { box-shadow: 0 0 20px rgba(16,185,129,.18); }
+.glow-blue    { box-shadow: 0 0 20px rgba(14,165,233,.18); }
+.glow-orange  { box-shadow: 0 0 20px rgba(249,115, 22,.18); }
+
+/* ── Premium stat badge ────────────────────────────────────────── */
+.stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  opacity: .9;
+}
+
+/* ── Animations ────────────────────────────────────────────────── */
+@keyframes pulse-ring {
+  0%   { transform: scale(.95); opacity: .5; }
+  50%  { transform: scale(1.05); opacity: .8; }
+  100% { transform: scale(.95); opacity: .5; }
+}
+.animate-pulse-ring { animation: pulse-ring 2s infinite ease-in-out; }
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up { animation: slide-up 0.25s ease-out; }
