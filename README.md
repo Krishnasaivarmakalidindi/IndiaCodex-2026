@@ -126,21 +126,7 @@ This application utilizes **@meshsdk/react** to interface with Cardano CIP-30 br
 
 ---
 
-## 🧪 Testing Guide
 
-**Multi-User Realtime Test:**
-1. Open Browser A: Click **Quick Access** -> **Continue as Farmer**. List a product.
-2. Open Browser B: Click **Quick Access** -> **Continue as Buyer**. 
-3. Watch the product appear instantly in Browser B. Submit an offer.
-4. Watch the offer appear instantly in Browser A.
-
-**Blockchain Audit Test:**
-1. Complete a trade.
-2. Navigate to **Trust Ledger**.
-3. Click **Verify Blockchain Integrity**. The system will trace the parent hashes of all blocks to ensure cryptographic integrity.
-4. Click **View QR Certificate** on a completed trade to view the public verification passport.
-
----
 
 ## 🚀 Deployment Guide
 
