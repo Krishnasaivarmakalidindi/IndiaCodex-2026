@@ -152,4 +152,3 @@ This application is ready to be deployed on Vercel or Netlify.
 
 ---
 
-*Built for the global Cardano Hackathon.* 🌍
